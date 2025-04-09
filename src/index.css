@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 42% 94%;
+    --foreground: 27 35% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 27 35% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 27 35% 18%;
+
+    --primary: 27 35% 24%;
+    --primary-foreground: 43 42% 96%;
+
+    --secondary: 43 42% 94%;
+    --secondary-foreground: 27 35% 24%;
+
+    --muted: 43 33% 90%;
+    --muted-foreground: 27 10% 40%;
+
+    --accent: 9 72% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 27 15% 83%;
+    --input: 27 15% 83%;
+    --ring: 27 35% 24%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .coffee-btn {
+    @apply px-4 py-2 bg-coffee-dark text-white rounded-lg hover:bg-coffee-medium transition-colors;
+  }
+  
+  .coffee-card {
+    @apply rounded-xl bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow;
+  }
+  
+  .bottom-nav-item {
+    @apply flex flex-col items-center justify-center text-coffee-dark opacity-70 hover:opacity-100;
+  }
+  
+  .bottom-nav-item.active {
+    @apply opacity-100 text-coffee-accent;
+  }
+}
