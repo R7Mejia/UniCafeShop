@@ -2,6 +2,8 @@
 import React from 'react';
 import { StarIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { featuredProducts } from '../data/featureProducts'; // Import the data
+
 
 export interface CoffeeProduct {
   id: number;

@@ -23,7 +23,7 @@ const AdminProductForm = () => {
       price: '',
       origin: '',
       roastLevel: 'medium',
-      image: 'https://images.unsplash.com/photo-1610889556528-9a770e32642f?q=80&w=1470&auto=format&fit=crop',
+      image: '',
     }
   });
 

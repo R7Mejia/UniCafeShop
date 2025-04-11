@@ -53,7 +53,7 @@ const CafecitoBot = () => {
   };
 
   return (
-    <div className="fixed bottom-[3.9rem] right-6 z-50">
+    <div className="fixed bottom-[4.5rem] right-2 z-50">
       {/* 🧠 Toggle Button */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
